@@ -1,2 +1,2 @@
 # teachtools
-Little tolls and hacks to deal with college IT systems
+Little tools and hacks to deal with college IT systems
