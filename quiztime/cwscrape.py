@@ -1,5 +1,5 @@
 """
-Script to extract accommodation letters from Clockwork
+Script to extract accommodation letters and extra time multipliers from Clockwork
 
 to set up run in the terminal:
 
@@ -108,10 +108,12 @@ def run(playwright: Playwright):
             nttl = ttl.replace(' . ', '\t')
             summary.write(f"{nttl}\t{sttl}\t{dur}\n")
         # print('\n'.join(letter))
-        with open(f'letters/letter_{i:02}.html', 'wt') as f:
-            f.write(enp(ttl))
-            f.write(enp(sttl))
-            f.write(letter)
+
+        ## Save the letter to a file, only needed when debugging
+        # with open(f'letters/letter_{i:02}.html', 'wt') as f:
+        #     f.write(enp(ttl))
+        #     f.write(enp(sttl))
+        #     f.write(letter)
 
         page.goto("https://cw.georgebrown.ca/Clockwork/user/instructor/letters.aspx")
         time.sleep(1)
