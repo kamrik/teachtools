@@ -12,18 +12,17 @@ The intention is for you to fork and adapt this page to your needs. Pull request
 - [Course Outlines](https://www.georgebrown.ca/programs/course-outlines)
 - [Important Dates](https://www.georgebrown.ca/current-students/important-dates?term=27246&category=131)
 
-### My Schedule
+### StuView
 - [Faculty Week at a Glance](https://facultyservices.georgebrown.ca/FacultySelfService/ssb/facultyWeekAtAGlance#!/)
 - [Detailed Schedule for Winter 2025](https://facultyservices.georgebrown.ca/FacultySelfService/ssb/facultyDetailSchedule#!/202402/)
 - [Classlist](https://student.georgebrown.ca/StudentSelfService/ssb/classListApp/classListPage)
-
-### Semester Start / End
 - [Crosslisting](https://extensibility.georgebrown.ca/BannerExtensibility/customPage/page/gbcD2LCrossListing) - 
   merge course sections into one D2L course -
   [guide](https://georgebrowncollege.h5p.com/content/1292036322071606988) 
 - [FAST Portal](https://fast.georgebrown.ca/FASTPORTAL/) - 
   grade entry via Millenium - 
   [guide PDF](https://stuview.georgebrown.ca/misc/Millennium_Grade_Entry.pdf)
+- [Accommodation letters](https://cw.georgebrown.ca/Clockwork/user/instructor/letters.aspx)
 
 
 ### D2L
@@ -40,7 +39,7 @@ The intention is for you to fork and adapt this page to your needs. Pull request
 ### Support & info
 - [Reset password etc](http://service.georgebrown.ca/)
 - [Email setup guide](https://www.georgebrown.ca/current-students/websites-apps-and-technical-support/student-email-support)
-- [New faculty resources]()
+- [New faculty resources](https://www.georgebrown.ca/teaching-and-learning-exchange/teaching-resources/resources-for-new-faculty)
 
 ### External tools
 - [Printing](https://gb-staff.printsys.net/en-CA/store) - Printsys
