@@ -11,7 +11,7 @@ GitHub has a CLI client that is convenient for some automations with GH Classroo
 
 ## Getting grades as CSV
 
-```
+```bash
 # List all your classes
 gh classroom list
 
@@ -29,7 +29,7 @@ gh classroom assignment -a $ASGN_ID
 gh classroom assignment-grades -a $ASGN_ID 
 # default filename is grades.csv, but you can override it
 gh classroom assignment-grades -a $ASGN_ID -f grades_lab2.csv
-
+```
 
 
 
