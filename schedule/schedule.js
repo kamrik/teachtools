@@ -4,7 +4,7 @@
 // Open dev tools
 // Paste the code below into the JS console
 // It will print out the schedule in CSV format
-// If you have a course with lots of CRNs  use spreadsheet pivot table 
+// If you have a course with lots of CRNs  use spreadsheet pivot table
 // with SUM(enrollment) as values and Instructor, Code, Days, FromTime as rows
 
 function weekdaysList(weedaysObj) {
@@ -29,7 +29,7 @@ function weekdaysList(weedaysObj) {
     return strdays
 }
 
-async function csvSchedule(term='202402') {
+async function csvSchedule(term) {
     let crnList = `/FacultySelfService/ssb/facultyDetailSchedule/courses?term=${term}`
     let response = await fetch(crnList)
     let data = await response.json()
@@ -40,7 +40,7 @@ async function csvSchedule(term='202402') {
 
         // fetch course info using the CRN
         // URL example '/FacultySelfService/ssb/facultyDetailSchedule/maintenance?term=202402&crn=57991'
-        let cUrl = `/FacultySelfService/ssb/facultyDetailSchedule/maintenance?term=${term}&crn=${crn}` 
+        let cUrl = `/FacultySelfService/ssb/facultyDetailSchedule/maintenance?term=${term}&crn=${crn}`
         let cResponse = await fetch(cUrl)
         let cData = await cResponse.json()
         let courseInfo = cData.courseInfo
@@ -75,4 +75,4 @@ async function csvSchedule(term='202402') {
 // Get the schedule
 // Term 202402 is Winter 2025
 // The logic is that it's the second term of the academic year that starts in September 2024
-csvSchedule('202402')
+csvSchedule('202501')
