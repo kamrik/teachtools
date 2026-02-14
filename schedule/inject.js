@@ -18,38 +18,39 @@ if (el) {
 //////////////////////
 // D2L colorize CRNs
 //////////////////////
-  const color_bg_online = "lightgreen";
+console.log('UJSCSS started')
 
-  const courses = [
-    {
-      name: "PyML",
-      semester: "202402",
-      color: "lightgreen",
-      crns: [
-        { crn: "54622", time: "Thu 12:00", color: "lightsalmon" },
-        { crn: "58081", time: "Thu 16:00", color: "plum" },
-      ],
-    },
-    {
-      name: "TXT",
-      semester: "202402",
-      color: "lightblue",
-      crns: [
-        { crn: "57991", time: "Fri 15:00 Zoom", color: color_bg_online },
-        { crn: "57993", time: "Fri 15:00 Zoom", color: color_bg_online },
-        { crn: "57997", time: "Fri 15:00 Zoom", color: color_bg_online },
-      ],
-    },
-  ];
+const color_bg_online = "lightgreen";
 
-  for (const course of courses) {
-    for (const crn of course.crns) {
-      console.log("Injected JS, changing: " + `${course.name} CRN-${crn.crn}-${course.semester}`);
-      $(`option:contains(CRN-${crn.crn}-${course.semester})`)
-        .css("background-color", crn.color)
-        .text(function (_, currentText) {
-          return `${course.name} CRN-${crn.crn} - ${crn.time}`;
-        });
-    }
+const courses = [
+  {
+    name: "PyML",
+    semester: "202502",
+    color: "lightgreen",
+    crns: [
+      { crn: "54622", time: "Thu 14:00", color: "lightsalmon" },
+      { crn: "58082", time: "Thu 16:30", color: "plum" },
+    ],
+  },
+  {
+    name: "TXT",
+    semester: "202502",
+    color: "lightblue",
+    crns: [
+      { crn: "57991", time: "Fri 15:00 Zoom", color: color_bg_online },
+      { crn: "57993", time: "Fri 15:00 Zoom", color: color_bg_online },
+      { crn: "57997", time: "Fri 15:00 Zoom", color: color_bg_online },
+    ],
+  },
+];
+
+for (const course of courses) {
+  for (const crn of course.crns) {
+    console.log("Injected JS, changing: " + `${course.name} CRN-${crn.crn}-${course.semester}`);
+    $(`option:contains(CRN-${crn.crn}-${course.semester})`)
+      .css("background-color", crn.color)
+      .text(function (_, currentText) {
+        return `${course.name} CRN-${crn.crn} - ${crn.time}`;
+      });
   }
-});
+}
