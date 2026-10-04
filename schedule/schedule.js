@@ -75,4 +75,4 @@ async function csvSchedule(term) {
 // Get the schedule
 // Term 202402 is Winter 2025
 // The logic is that it's the second term of the academic year that starts in September 2024
-csvSchedule('202501')
+csvSchedule('202601')
